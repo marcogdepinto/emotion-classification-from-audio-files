@@ -17,10 +17,10 @@ The classes we are trying to predict are the following:
 
 **Tools and languages used**
 
-- [Python 3.7] (https://www.python.org/downloads/release/python-370/)
-- [Google Colab] (https://colab.research.google.com/)
-- [Google Drive] (https://drive.google.com)
-- [Jupyter Notebook] (http://jupyter.org/)
+- [Python 3.7](https://www.python.org/downloads/release/python-370/)
+- [Google Colab](https://colab.research.google.com/)
+- [Google Drive](https://drive.google.com)
+- [Jupyter Notebook](http://jupyter.org/)
 
 # About the RAVDESS dataset
 
