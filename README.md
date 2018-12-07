@@ -1,5 +1,29 @@
 # Emotion-Classification-Ravdess
 
+# The project
+
+The scope of this project is to create a classifier to predict the emotions of the speaker starting from an audio file.
+
+The classes we are trying to predict are the following: 
+
+- 01 = neutral
+- 02 = calm
+- 03 = happy
+- 04 = sad
+- 05 = angry
+- 06 = fearful
+- 07 = disgust
+- 08 = surprised
+
+**Tools and languages used**
+
+- [Python 3.7] (https://www.python.org/downloads/release/python-370/)
+- [Google Colab] (https://colab.research.google.com/)
+- [Google Drive] (https://drive.google.com)
+- [Jupyter Notebook] (http://jupyter.org/)
+
+# About the RAVDESS dataset
+
 **Download**
 
 The Ryerson Audio-Visual Database of Emotional Speech and Song (RAVDESS) can be downloaded free of charge at https://zenodo.org/record/1188976. 
