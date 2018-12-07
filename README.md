@@ -37,7 +37,7 @@ The approaches actually used are:
 
 The best precision/recall scores are the following:
 
-[Link to classification report](https://github.com/marcogdepinto/Emotion-Classification-Ravdess/blob/master/Classification%20Report.JPG)
+![Link to classification report](https://github.com/marcogdepinto/Emotion-Classification-Ravdess/blob/master/Classification%20Report.JPG)
 
 **Next steps**
 
