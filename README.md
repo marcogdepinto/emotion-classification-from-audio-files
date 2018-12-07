@@ -22,6 +22,27 @@ The classes we are trying to predict are the following:
 - [Google Drive](https://drive.google.com)
 - [Jupyter Notebook](http://jupyter.org/)
 
+**Dataset**
+
+Audio-only files of all actors (01-24): 1440 samples from the RAVDESS dataset (see below to know more about the data).
+
+**Status of the Project**
+
+This is project is **OPEN**: the task started in November 2018.
+
+The approaches actually used are:
+
+- Random Forest Classifier
+- Decision Tree Classifier
+
+The best precision/recall scores are the following:
+
+[Link To Picture]()
+
+**Next steps**
+
+I am working to build a LSTM (Long-Short Term Memory) Network.
+
 # About the RAVDESS dataset
 
 **Download**
@@ -37,10 +58,6 @@ The RAVDESS contains 7356 files. Each file was rated 10 times on emotional valid
 **Description**
 
 The dataset contains the complete set of 7356 RAVDESS files (total size: 24.8 GB). Each of the 24 actors consists of three modality formats: Audio-only (16bit, 48kHz .wav), Audio-Video (720p H.264, AAC 48kHz, .mp4), and Video-only (no sound).  Note, there are no song files for Actor_18.
-
-**Files used for this task**
-
-Audio-only files of all actors (01-24) are available as two separate zip files (~200 MB each) and have been used for this task.
 
 **License information**
 
