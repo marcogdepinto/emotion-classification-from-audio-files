@@ -28,7 +28,7 @@ Audio-only files of all actors (01-24): 1440 samples from the RAVDESS dataset (s
 
 **Status of the Project**
 
-This is project is **OPEN**: the task started in November 2018.
+This project is **OPEN**: the task started in November 2018.
 
 The approaches actually used are:
 
