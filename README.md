@@ -32,12 +32,14 @@ This project is **OPEN**: the task started in November 2018.
 
 The approaches actually used are:
 
-- Random Forest Classifier
-- Decision Tree Classifier
+- **Random Forest Classifier and Decision Tree Classifier**
+  The best precision/recall scores are the following:
+  ![Link to classification report](https://github.com/marcogdepinto/Emotion-Classification-Ravdess/blob/master/Classification%20Report.JPG)
 
-The best precision/recall scores are the following:
+- **Neural Network**
+  Obtained 61% accuracy on the training set and 48% on the test set
 
-![Link to classification report](https://github.com/marcogdepinto/Emotion-Classification-Ravdess/blob/master/Classification%20Report.JPG)
+![Link to loss plot](https://github.com/marcogdepinto/Emotion-Classification-Ravdess/blob/master/loss.png)
 
 **Next steps**
 
