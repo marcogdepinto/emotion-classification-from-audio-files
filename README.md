@@ -24,7 +24,7 @@ The classes we are trying to predict are the following:
 
 **Dataset**
 
-Audio-only files of all actors (01-24): 1440 samples from the RAVDESS dataset (see below to know more about the data).
+Audio-only files of all actors (01-24): 2452 samples from the RAVDESS dataset (see below to know more about the data).
 
 **Status of the Project**
 
@@ -37,7 +37,7 @@ The approaches actually used are:
   ![Link to classification report](https://github.com/marcogdepinto/Emotion-Classification-Ravdess/blob/master/Classification%20Report.JPG)
 
 - **Neural Network**
-  Obtained 61% accuracy on the training set and 48% on the test set
+Obtained 72% accuracy on the training set and 62% on the test set (we started with 61% on the training set and 48% on the test set in the first attempt)
 
 ![Link to loss plot](https://github.com/marcogdepinto/Emotion-Classification-Ravdess/blob/master/loss.png)
 
