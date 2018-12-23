@@ -41,7 +41,7 @@ Obtained 72% accuracy on the training set and 62% on the test set (we started wi
 
 **Actual loss**
 
-![Link to actual loss](https://github.com/marcogdepinto/Emotion-Classification-Ravdess/blob/master/loss_previous.png)
+![Link to actual loss](https://github.com/marcogdepinto/Emotion-Classification-Ravdess/blob/master/loss_actual.png)
 
 **Previous loss**
 
