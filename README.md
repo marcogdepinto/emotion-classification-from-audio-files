@@ -37,13 +37,15 @@ The approaches actually used are:
   ![Link to classification report](https://github.com/marcogdepinto/Emotion-Classification-Ravdess/blob/master/Classification%20Report.JPG)
 
 - **Neural Network**
-Obtained 72% accuracy on the training set and 62% on the test set (we started with 61% on the training set and 48% on the test set in the first attempt)
+Obtained 75% accuracy on the training set and 65% on the test set (my first attempt scored 61% on the training set and 48% on the test set)
 
-**Actual loss**
+**Actual loss and accuracy plots
 
-![Link to actual loss](https://github.com/marcogdepinto/Emotion-Classification-Ravdess/blob/master/loss_actual.png)
+
 
 **Previous loss**
+
+![Link to actual loss](https://github.com/marcogdepinto/Emotion-Classification-Ravdess/blob/master/loss_actual.png)
 
 ![Link to previous loss](https://github.com/marcogdepinto/Emotion-Classification-Ravdess/blob/master/loss_previous.png)
 
