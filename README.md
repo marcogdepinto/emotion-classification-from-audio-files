@@ -30,16 +30,11 @@ Audio-only files of all actors (01-24): 2452 samples from the RAVDESS dataset (s
 
 This project is **OPEN**: the task started in November 2018.
 
-The approaches actually used are:
+**Results with Neural Network**
 
-- **Random Forest Classifier and Decision Tree Classifier**
-  The best precision/recall scores are the following:
-  ![Link to classification report](https://github.com/marcogdepinto/Emotion-Classification-Ravdess/blob/master/Classification%20Report.JPG)
-
-- **Neural Network**
 Obtained 75% accuracy on the training set and 65% on the test set (my first attempt scored 61% on the training set and 48% on the test set)
 
-**Actual loss and accuracy plots**
+**Loss and accuracy plots**
 
 ![Link to new loss](https://github.com/marcogdepinto/Emotion-Classification-Ravdess/blob/master/media/new_loss.png) 
 
