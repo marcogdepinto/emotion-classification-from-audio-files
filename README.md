@@ -32,7 +32,7 @@ This project is **OPEN**: the task started in November 2018.
 
 **Results with Neural Network**
 
-Obtained 75% accuracy on the training set and 65% on the test set (my first attempt scored 61% on the training set and 48% on the test set)
+Obtained **75% accuracy on the training set and 65% on the test set** (my first attempt scored 61% on the training set and 48% on the test set)
 
 **Loss and accuracy plots**
 
