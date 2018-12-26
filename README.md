@@ -45,15 +45,9 @@ Obtained 75% accuracy on the training set and 65% on the test set (my first atte
 
 ![Link to accuracy](https://github.com/marcogdepinto/Emotion-Classification-Ravdess/blob/master/media/new_accuracy.png)
 
-**Previous loss plots**
-
-![Link to loss improved](https://github.com/marcogdepinto/Emotion-Classification-Ravdess/blob/master/media/loss_improved.png)
-
-![Link to first loss](https://github.com/marcogdepinto/Emotion-Classification-Ravdess/blob/master/media/first_loss.png)
-
 **Next steps**
 
-I am working to build a LSTM (Long-Short Term Memory) Network.
+I am working to create new features and to build a LSTM (Long-Short Term Memory) Network.
 
 # About the RAVDESS dataset
 
