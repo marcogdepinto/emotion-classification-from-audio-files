@@ -4,13 +4,6 @@
 
 The scope of this project is to create a classifier to predict the emotions of the speaker starting from an audio file.
 
-**Tools and languages used**
-
-- [Python 3.7](https://www.python.org/downloads/release/python-370/)
-- [Google Colab](https://colab.research.google.com/)
-- [Google Drive](https://drive.google.com)
-- [Jupyter Notebook](http://jupyter.org/)
-
 **Dataset**
 
 For this task, I have used 4948 samples from the RAVDESS dataset (see below to know more about the data).
@@ -41,6 +34,13 @@ The classes we are trying to predict are the following:
 ![Link to loss](https://github.com/marcogdepinto/Emotion-Classification-Ravdess/blob/master/media/model_loss.png) 
 
 ![Link to accuracy](https://github.com/marcogdepinto/Emotion-Classification-Ravdess/blob/master/media/model_accuracy.png)
+
+**Tools and languages used**
+
+- [Python 3.7](https://www.python.org/downloads/release/python-370/)
+- [Google Colab](https://colab.research.google.com/)
+- [Google Drive](https://drive.google.com)
+- [Jupyter Notebook](http://jupyter.org/)
 
 # About the RAVDESS dataset
 
