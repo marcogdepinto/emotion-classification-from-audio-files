@@ -28,21 +28,17 @@ Audio-only files of all actors (01-24): 2452 samples from the RAVDESS dataset (s
 
 **Status of the Project**
 
-This project is **OPEN**: the task started in November 2018.
+This project is **CLOSED**.
 
 **Results with Neural Network**
 
-Obtained **75% accuracy on the training set and 65% on the test set** (my first attempt scored 61% on the training set and 48% on the test set)
+Obtained **94% accuracy on the training set and 89% on the test set**
 
 **Loss and accuracy plots**
 
-![Link to new loss](https://github.com/marcogdepinto/Emotion-Classification-Ravdess/blob/master/media/new_loss.png) 
+![Link to loss](https://github.com/marcogdepinto/Emotion-Classification-Ravdess/blob/master/media/model_loss.png) 
 
-![Link to accuracy](https://github.com/marcogdepinto/Emotion-Classification-Ravdess/blob/master/media/new_accuracy.png)
-
-**Next steps**
-
-I am working to create new features and to build a LSTM (Long-Short Term Memory) Network.
+![Link to accuracy](https://github.com/marcogdepinto/Emotion-Classification-Ravdess/blob/master/media/model_accuracy.png)
 
 # About the RAVDESS dataset
 
