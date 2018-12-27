@@ -24,15 +24,17 @@ The classes we are trying to predict are the following:
 
 **Dataset**
 
-Audio-only files of all actors (01-24): 2452 samples from the RAVDESS dataset (see below to know more about the data).
+For this task, I have used 4948 samples from the RAVDESS dataset (see below to know more about the data).
 
-**Status of the Project**
+The samples comes from:
 
-This project is **CLOSED**.
+- Audio-only files;
+
+- Video + audio files: I have extracted the audio from each file using the script **Mp4ToWav.py** that you can find in the main directory of the project.
 
 **Results with Neural Network**
 
-Obtained **94% accuracy on the training set and 89% on the test set**
+94% accuracy on the training set and 89% on the test set.
 
 **Loss and accuracy plots**
 
