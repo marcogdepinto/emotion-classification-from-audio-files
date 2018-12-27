@@ -31,9 +31,9 @@ The classes we are trying to predict are the following:
 
 # Loss and accuracy plots
 
-![Link to loss](https://github.com/marcogdepinto/Emotion-Classification-Ravdess/blob/master/media/model_loss.png) 
+![Link to loss](https://github.com/marcogdepinto/Emotion-Classification-Ravdess/blob/master/media/loss.png) 
 
-![Link to accuracy](https://github.com/marcogdepinto/Emotion-Classification-Ravdess/blob/master/media/model_accuracy.png)
+![Link to accuracy](https://github.com/marcogdepinto/Emotion-Classification-Ravdess/blob/master/media/accuracy.png)
 
 # Tools and languages used
 
