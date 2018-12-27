@@ -27,7 +27,7 @@ The classes we are trying to predict are the following:
 
 # Result of the application of a Neural Network to this dataset
 
-**94%** accuracy on the training set and **89%** on the test set.
+**95.9%** accuracy on the training set and **91%** on the test set.
 
 # Loss and accuracy plots
 
