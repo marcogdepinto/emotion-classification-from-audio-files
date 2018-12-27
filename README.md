@@ -25,17 +25,17 @@ The classes we are trying to predict are the following:
 - 07 = disgust
 - 08 = surprised
 
-**Results with Neural Network**
+# Results with Neural Network
 
 94% accuracy on the training set and 89% on the test set.
 
-**Loss and accuracy plots**
+# Loss and accuracy plots**
 
 ![Link to loss](https://github.com/marcogdepinto/Emotion-Classification-Ravdess/blob/master/media/model_loss.png) 
 
 ![Link to accuracy](https://github.com/marcogdepinto/Emotion-Classification-Ravdess/blob/master/media/model_accuracy.png)
 
-**Tools and languages used**
+# Tools and languages used**
 
 - [Python 3.7](https://www.python.org/downloads/release/python-370/)
 - [Google Colab](https://colab.research.google.com/)
