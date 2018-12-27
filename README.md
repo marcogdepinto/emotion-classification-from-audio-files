@@ -4,17 +4,6 @@
 
 The scope of this project is to create a classifier to predict the emotions of the speaker starting from an audio file.
 
-The classes we are trying to predict are the following: 
-
-- 01 = neutral
-- 02 = calm
-- 03 = happy
-- 04 = sad
-- 05 = angry
-- 06 = fearful
-- 07 = disgust
-- 08 = surprised
-
 **Tools and languages used**
 
 - [Python 3.7](https://www.python.org/downloads/release/python-370/)
@@ -31,6 +20,17 @@ The samples comes from:
 - Audio-only files;
 
 - Video + audio files: I have extracted the audio from each file using the script **Mp4ToWav.py** that you can find in the main directory of the project.
+
+The classes we are trying to predict are the following: 
+
+- 01 = neutral
+- 02 = calm
+- 03 = happy
+- 04 = sad
+- 05 = angry
+- 06 = fearful
+- 07 = disgust
+- 08 = surprised
 
 **Results with Neural Network**
 
