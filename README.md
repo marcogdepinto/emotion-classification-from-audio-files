@@ -26,12 +26,24 @@ The classes we are trying to predict are the following: (01 = neutral, 02 = calm
 
 ![Link to accuracy](https://github.com/marcogdepinto/Emotion-Classification-Ravdess/blob/master/media/accuracy.png)
 
+# Classification report
+
+![Link do classification report](https://github.com/marcogdepinto/Emotion-Classification-Ravdess/blob/master/media/classificationReport.png)
+
 # Tools and languages used
 
 - [Python 3.7](https://www.python.org/downloads/release/python-370/)
 - [Google Colab](https://colab.research.google.com/)
 - [Google Drive](https://drive.google.com)
 - [Jupyter Notebook](http://jupyter.org/)
+
+# Try it!
+
+- Install Tensorflow, Librosa, Keras, Numpy.
+
+- `git clone https://github.com/marcogdepinto/Emotion-Classification-Ravdess.git`
+
+- Run the file `LivePredictions.py` changing the `PATH` and `FILE` to the local path in which you have downloaded the example file `01-01-01-01-01-01-01.wav` (or any other file of the RAVDESS dataset from their website) and the model `Emotion_Voice_Detection_Model.h5`
 
 # About the RAVDESS dataset
 
