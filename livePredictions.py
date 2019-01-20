@@ -11,7 +11,6 @@ class livePredictions:
 
     def load_model(self):
         '''
-
         I am here to load you model.
 
         :param path: path to your h5 model.
