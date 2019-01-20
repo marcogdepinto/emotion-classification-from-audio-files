@@ -16,17 +16,15 @@ The samples comes from:
 
 The classes we are trying to predict are the following: (01 = neutral, 02 = calm, 03 = happy, 04 = sad, 05 = angry, 06 = fearful, 07 = disgust, 08 = surprised)
 
-# Result of the application of a Neural Network to this dataset
+# Actual metrics after the application of a Neural Network to this dataset
 
-**95.9%** accuracy on the training set and **91%** on the test set.
-
-# Loss and accuracy plots
+**Loss and accuracy plots**
 
 ![Link to loss](https://github.com/marcogdepinto/Emotion-Classification-Ravdess/blob/master/media/loss.png) 
 
 ![Link to accuracy](https://github.com/marcogdepinto/Emotion-Classification-Ravdess/blob/master/media/accuracy.png)
 
-# Classification report
+**Classification report**
 
 ![Link do classification report](https://github.com/marcogdepinto/Emotion-Classification-Ravdess/blob/master/media/classificationReport.png)
 
