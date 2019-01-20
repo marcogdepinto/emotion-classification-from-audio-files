@@ -1,7 +1,7 @@
 import os
 import subprocess
 
-# Loop into the filesystem
+# Loop through the filesystem
 for root, dirs, files in os.walk("./folder", topdown=False):
     # Loop through files
     for name in files:
@@ -21,5 +21,3 @@ for root, dirs, files in os.walk("./folder", topdown=False):
             # Skip the file in case of error
             except ValueError:
                 continue
-            
-            
