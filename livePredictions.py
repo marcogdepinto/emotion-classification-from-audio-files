@@ -2,7 +2,6 @@ import keras
 import numpy as np
 import librosa
 
-
 class livePredictions:
 
     def __init__(self, path, file):
