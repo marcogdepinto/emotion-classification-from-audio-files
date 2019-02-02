@@ -26,7 +26,11 @@ The classes we are trying to predict are the following: (01 = neutral, 02 = calm
 
 **Classification report**
 
-![Link do classification report](https://github.com/marcogdepinto/Emotion-Classification-Ravdess/blob/master/media/classificationReport.png)
+![Link do classification report](https://github.com/marcogdepinto/Emotion-Classification-Ravdess/blob/master/media/ClassificationReport.png)
+
+**Confusion matrix**
+
+![Link do classification report](https://github.com/marcogdepinto/Emotion-Classification-Ravdess/blob/master/media/ConfusionMatrix.png)
 
 # Tools and languages used
 
