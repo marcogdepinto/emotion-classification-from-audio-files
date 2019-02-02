@@ -37,28 +37,28 @@ class livePredictions:
         '''
         self.pred  = pred
 
-        if pred == 1:
+        if pred == 0:
             pred = "neutral"
             return pred
-        elif pred == 2:
+        elif pred == 1:
             pred = "calm"
             return pred
-        elif pred == 3:
+        elif pred == 2:
             pred = "happy"
             return pred
-        elif pred == 4:
+        elif pred == 3:
             pred = "sad"
             return pred
-        elif pred == 5:
+        elif pred == 4:
             pred = "angry"
             return pred
-        elif pred == 6:
+        elif pred == 5:
             pred = "fearful"
             return pred
-        elif pred == 7:
+        elif pred == 6:
             pred = "disgust"
             return pred
-        elif pred == 8:
+        elif pred == 7:
             pred = "surprised"
             return pred
 
