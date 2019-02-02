@@ -18,6 +18,10 @@ The classes we are trying to predict are the following: (0 = neutral, 1 = calm, 
 
 # Actual metrics after the application of a Neural Network to this dataset
 
+**Model summary**
+
+![Link to loss](https://github.com/marcogdepinto/Emotion-Classification-Ravdess/blob/master/media/modelSummary.png) 
+
 **Loss and accuracy plots**
 
 ![Link to loss](https://github.com/marcogdepinto/Emotion-Classification-Ravdess/blob/master/media/loss.png) 
@@ -26,11 +30,11 @@ The classes we are trying to predict are the following: (0 = neutral, 1 = calm, 
 
 **Classification report**
 
-![Link do classification report](https://github.com/marcogdepinto/Emotion-Classification-Ravdess/blob/master/media/ClassificationReport.png)
+![Link do classification report](https://github.com/marcogdepinto/Emotion-Classification-Ravdess/blob/master/media/classificationReport.png)
 
 **Confusion matrix**
 
-![Link do classification report](https://github.com/marcogdepinto/Emotion-Classification-Ravdess/blob/master/media/ConfusionMatrix.png)
+![Link do classification report](https://github.com/marcogdepinto/Emotion-Classification-Ravdess/blob/master/media/confusionMatrix.png)
 
 # Tools and languages used
 
