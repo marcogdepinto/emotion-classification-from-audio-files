@@ -14,7 +14,7 @@ The samples comes from:
 
 - Video + audio files: I have extracted the audio from each file using the script **Mp4ToWav.py** that you can find in the main directory of the project.
 
-The classes we are trying to predict are the following: (01 = neutral, 02 = calm, 03 = happy, 04 = sad, 05 = angry, 06 = fearful, 07 = disgust, 08 = surprised)
+The classes we are trying to predict are the following: (0 = neutral, 1 = calm, 2 = happy, 3 = sad, 4 = angry, 5 = fearful, 6 = disgust, 7 = surprised)
 
 # Actual metrics after the application of a Neural Network to this dataset
 
