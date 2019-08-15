@@ -51,6 +51,10 @@ The classes we are trying to predict are the following: (0 = neutral, 1 = calm, 
 
 - Run the file `LivePredictions.py` changing the `PATH` and `FILE` to the local path in which you have downloaded the example file `01-01-01-01-01-01-01.wav` (or any other file of the RAVDESS dataset from their website) and the model `Emotion_Voice_Detection_Model.h5`
 
+# Include this work in a web API
+
+I am actually working on a new project using Django to serve this model in a web application: more info at https://github.com/marcogdepinto/Django-Emotion-Classification-Ravdess-API
+
 # About the RAVDESS dataset
 
 **Download**
