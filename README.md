@@ -4,7 +4,7 @@
 
 The scope of this project is to create a classifier to predict the emotions of the speaker starting from an audio file. 
 
-*Please note this project is not made for generalization, it is built to work only with the files of the RAVDESS dataset, not for any audio file.*
+*Please note this project is not made for generalization: it is built to work only with the files of the RAVDESS dataset, not for any audio file.*
 
 **Dataset**
 
