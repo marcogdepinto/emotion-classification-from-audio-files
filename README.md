@@ -19,7 +19,7 @@ The samples include:
 
 The classes we are trying to predict are the following: (0 = neutral, 1 = calm, 2 = happy, 3 = sad, 4 = angry, 5 = fearful, 6 = disgust, 7 = surprised). This dataset is skewed as for the we do not have a calm class in TESS, hence there are less data for that particular class. This is evident when taking a look at the classification report.
 
-Please note that in previous versions of this work I was working only with the RAVDESS dataset, TESS has been added recently. Also, I was extracting audio features from the videos of the RAVDESS dataset. This particular part of the pipeline has been removed because it was shuffling very similar files in the training and test sets, boosting accuracy of the model as a consequence (overfitting). Take a look at [this issue](https://github.com/marcogdepinto/Emotion-Classification-Ravdess/issues/11) to understand more about this.
+Please note that in previous versions of this work I was working only with the RAVDESS dataset, TESS has been added recently. Also, I was extracting audio features from the videos of the RAVDESS dataset. This particular part of the pipeline has been removed because it was shuffling very similar files in the training and test sets, boosting accuracy of the model as a consequence (overfitting). Take a look at [this issue](https://github.com/marcogdepinto/Emotion-Classification-Ravdess/issues/11) to understand more about this. The old data exploration and codebase are both stored in the ```legacy_code``` folder.
 
 # Metrics
 
