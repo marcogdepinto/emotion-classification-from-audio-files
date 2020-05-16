@@ -1,28 +1,31 @@
-# Emotion-Classification-Ravdess
+# Audio Emotion Classification from Multiple Datasets
 
 # The project
 
-The scope of this project is to create a classifier to predict the emotions of the speaker starting from an audio file. 
-
-*Please note this project is not made for generalization: it is built to work only with the files of the RAVDESS dataset, not for any audio file.*
+The scope of this project is to create a classifier able to predict the emotions of the speaker starting from an audio file. 
 
 **Dataset**
 
-For this task, I have used 4948 samples from the RAVDESS dataset (see below to know more about the data).
+For this task, I have used 5252 samples from 
 
-The samples comes from:
+- the [Ryerson Audio-Visual Database of Emotional Speech and Song (RAVDESS) dataset](https://zenodo.org/record/1188976#.XsAXemgzaUk) 
+- the [Toronto emotional speech set (TESS) dataset](https://tspace.library.utoronto.ca/handle/1807/24487) 
 
-- Audio-only files;
+The samples include: 
 
-- Video + audio files: I have extracted the audio from each file using the script **Mp4ToWav.py** that you can find in the main directory of the project.
+- 1440 speech files and 1012 Song files from **RAVDESS**. This dataset includes recordings of 24 professional actors (12 female, 12 male), vocalizing two lexically-matched statements in a neutral North American accent. Speech includes calm, happy, sad, angry, fearful, surprise, and disgust expressions, and song contains calm, happy, sad, angry, and fearful emotions. Each file was rated 10 times on emotional validity, intensity, and genuineness. Ratings were provided by 247 individuals who were characteristic of untrained adult research participants from North America. A further set of 72 participants provided test-retest data. High levels of emotional validity, interrater reliability, and test-retest intrarater reliability were reported. Validation data is open-access, and can be downloaded along with our paper from [PLoS ONE](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0196391).
 
-The classes we are trying to predict are the following: (0 = neutral, 1 = calm, 2 = happy, 3 = sad, 4 = angry, 5 = fearful, 6 = disgust, 7 = surprised)
+- 2800 files from **TESS**. A set of 200 target words were spoken in the carrier phrase "Say the word _____' by two actresses (aged 26 and 64 years) and recordings were made of the set portraying each of seven emotions (anger, disgust, fear, happiness, pleasant surprise, sadness, and neutral). There are 2800 stimuli in total. Two actresses were recruited from the Toronto area. Both actresses speak English as their first language, are university educated, and have musical training. Audiometric testing indicated that both actresses have thresholds within the normal range.
 
-# Actual metrics after the application of a Neural Network to this dataset
+The classes we are trying to predict are the following: (0 = neutral, 1 = calm, 2 = happy, 3 = sad, 4 = angry, 5 = fearful, 6 = disgust, 7 = surprised). This dataset is skewed as for the we do not have a calm class in TESS, hence there are less data for that particular class. This is evident when taking a look at the classification report.
+
+Please note that in previous versions of this work I was extracting also an audio feature from the videos of the RAVDESS dataset. This particular part of the pipeline has been removed because it was shuffling very similar files in the training and test sets, boosting accuracy of the model as a consequence (overfitting).
+
+# Metrics
 
 **Model summary**
 
-![Link to loss](https://github.com/marcogdepinto/Emotion-Classification-Ravdess/blob/master/media/modelSummary.png) 
+![Link to model](https://github.com/marcogdepinto/Emotion-Classification-Ravdess/blob/master/media/model.png) 
 
 **Loss and accuracy plots**
 
@@ -32,32 +35,48 @@ The classes we are trying to predict are the following: (0 = neutral, 1 = calm, 
 
 **Classification report**
 
-![Link do classification report](https://github.com/marcogdepinto/Emotion-Classification-Ravdess/blob/master/media/classificationReportUpdated.png)
+![Link do classification report](https://github.com/marcogdepinto/Emotion-Classification-Ravdess/blob/master/media/ClassificationReport.png)
 
 **Confusion matrix**
 
-![Link do classification report](https://github.com/marcogdepinto/Emotion-Classification-Ravdess/blob/master/media/confusionMatrix.png)
+![Link do classification report](https://github.com/marcogdepinto/Emotion-Classification-Ravdess/blob/master/media/ConfusionMatrix.png)
 
-# Tools and languages used
+# How to do it yourself
 
-- [Python 3.7](https://www.python.org/downloads/release/python-370/)
-- [Google Colab](https://colab.research.google.com/)
-- [Google Drive](https://drive.google.com)
-- [Jupyter Notebook](http://jupyter.org/)
+1) Download Audio_Song_Actors_01-24.zip and Audio_Speech_Actors_01-24.zip, unzip and merge the content of the folders (e.g. Actor_01 should include both Speech and Song) and then add it to the ```features``` folder.
 
-# Try it!
+2) Create two empty folders, ```Actor_25``` and ```Actor_26```, into the ```features``` folder.
 
-- Install Tensorflow, Librosa, Keras, Numpy.
+3) Download the TESS dataset and unzip it into the ```TESS_Toronto_emotional_speech_set_data``` folder.
+The format you need to have to make the following steps work is:
 
-- `git clone https://github.com/marcogdepinto/Emotion-Classification-Ravdess.git`
+    ```
+    TESS_Toronto_emotional_speech_set_data
+    --OAF_angry
+    --OAF_disgust
+    --Other Folders..
+    ```
+4) Run ```tess_pipeline.py```: this will copy the files in the ```Actor_25``` and ```Actor_26``` folders with a usable naming convention. For details, read the docstrings of ```tess_pipeline.py```.
 
-- Run the file `LivePredictions.py` changing the `PATH` and `FILE` to the local path in which you have downloaded the example file `01-01-01-01-01-01-01.wav` (or any other file of the RAVDESS dataset from their website) and the model `Emotion_Voice_Detection_Model.h5`
+5) **ONLY IF YOU WANT TO CREATE NEW FEATURES**: run ```create_features.py```. Please note this is NOT necessary as in the ```features``` folder there are already the joblib files created with ```create_features.py```.
 
-# Include this work in a web API
+6) **ONLY IF YOU WANT TO CREATE A NEW MODEL**  run ```neural_network.py```. Please note this is NOT necessary as in the ```model``` folder there is already a pre_trained model to use.
 
-I am actually working on a new project using Django to serve this model in a web application: more info at https://github.com/marcogdepinto/Django-Emotion-Classification-Ravdess-API
+# How to make a simple test
 
-# About the RAVDESS dataset
+Let's be clear. When we talk about emotions and machine, we are talking about a very difficult task. 
+
+I have pasted two files in the ```examples``` folder:
+
+a) 03-01-01-01-01-02-05.wav is an example of WRONG prediction: it is a NEUTRAL file, the model predicts CALM. Try to listen to the audio yourself. Which is the emotion for you? For me CALM seems a fair prediction. That speaker is classified as neutral, but he is not angry at all. You see my point?
+
+b) 10-16-07-29-82-30-63.wav is a DISGUST file. The model is getting it.
+
+Feel free to try with other files or record your voice. I still have to try this last one but I am very curious about the result.
+
+*Important note*: the classes are encoded from 0 to 7 in the code. In the dataset, from 01 to 08. Be aware when you try. If the model predicts 0 and you are using a NEUTRAL file (01), this is correct and the expected behavior. Keras wants the predictions to start from 0 and not from 1, so the code is adjusted to cope with this requirement.
+
+# More info about the RAVDESS dataset
 
 **Download**
 
@@ -101,3 +120,19 @@ Filename identifiers
 - 1st Repetition (01)
 - 12th Actor (12)
 - Female, as the actor ID number is even.
+
+# More info about the TESS dataset
+
+Pichora-Fuller, M. Kathleen; Dupuis, Kate, 2020, "Toronto emotional speech set (TESS)", https://doi.org/10.5683/SP2/E8H2MF, Scholars Portal Dataverse, V1
+
+```
+@data{SP2/E8H2MF_2020,
+author = {Pichora-Fuller, M. Kathleen and Dupuis, Kate},
+publisher = {Scholars Portal Dataverse},
+title = "{Toronto emotional speech set (TESS)}",
+year = {2020},
+version = {DRAFT VERSION},
+doi = {10.5683/SP2/E8H2MF},
+url = {https://doi.org/10.5683/SP2/E8H2MF}
+}
+```
