@@ -66,7 +66,7 @@ The format you need to have to make the following steps work is:
 
 # How to make a simple test
 
-Let's be clear. When we talk about emotions and machine, we are talking about a very difficult task. 
+Let's be clear. When we talk about emotions understanding, we are talking about a very difficult task. 
 
 I have pasted two files in the ```examples``` folder:
 
