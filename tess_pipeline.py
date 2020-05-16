@@ -29,13 +29,14 @@ Actor (01 to 24. Odd numbered actors are male, even numbered actors are female).
 
 In case of TESS files, an example below. We do not care of assigning values other than the ones
 specified below as those are not used by the model, hence we are assigning random integers.
-- 03 (random)
-- 01 (random)
-- 01 (this varies according to the fact in TESS we have 1 emotion less then RAVDESS (calm).
-- 01 (random)
-- 03 (random).
-- 01 (random)
-- 24 (this will be 25 if YAF, 26 if OAF)
+- 03 (Random)
+- 01 (Random)
+- 01 (This varies according to the fact in TESS we have 1 emotion less then RAVDESS: calm).
+- 01 (Random)
+- 03 (Random).
+- 01 (Random)
+- 01 (Random. I thought initially to put 25 if YAF, 26 if OAF, but that is not needed as the pipeline is not
+using the actor information from the filename, only the mfccs extracted from librosa and the target emotion).
 """
 import os
 import shutil
