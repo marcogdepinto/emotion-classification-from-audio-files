@@ -3,3 +3,4 @@ TESS_Toronto_emotional_speech_set_data/*
 .idea
 .idea/*
 __pycache__
+/features/
