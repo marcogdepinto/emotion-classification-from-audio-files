@@ -19,7 +19,7 @@ The samples include:
 
 The classes we are trying to predict are the following: (0 = neutral, 1 = calm, 2 = happy, 3 = sad, 4 = angry, 5 = fearful, 6 = disgust, 7 = surprised). This dataset is skewed as for the we do not have a calm class in TESS, hence there are less data for that particular class. This is evident when taking a look at the classification report.
 
-Please note that in previous versions of this work I was extracting also an audio feature from the videos of the RAVDESS dataset. This particular part of the pipeline has been removed because it was shuffling very similar files in the training and test sets, boosting accuracy of the model as a consequence (overfitting).
+Please note that in previous versions of this work I was working only with the RAVDESS dataset, TESS has been added recently. Also, I was extracting audio features from the videos of the RAVDESS dataset. This particular part of the pipeline has been removed because it was shuffling very similar files in the training and test sets, boosting accuracy of the model as a consequence (overfitting). Take a look at [this issue](https://github.com/marcogdepinto/Emotion-Classification-Ravdess/issues/11) to understand more about this.
 
 # Metrics
 
@@ -43,11 +43,13 @@ Please note that in previous versions of this work I was extracting also an audi
 
 # How to do it yourself
 
-1) Download Audio_Song_Actors_01-24.zip and Audio_Speech_Actors_01-24.zip, unzip and merge the content of the folders (e.g. Actor_01 should include both Speech and Song) and then add it to the ```features``` folder.
+1)  ```git clone https://github.com/marcogdepinto/Emotion-Classification-Ravdess.git ``` OR, as an alternative, all the optional steps below.
 
-2) Create two empty folders, ```Actor_25``` and ```Actor_26```, into the ```features``` folder.
+2) **OPTIONAL**: Download Audio_Song_Actors_01-24.zip and Audio_Speech_Actors_01-24.zip, unzip and merge the content of the folders (e.g. Actor_01 should include both Speech and Song) and then add it to the ```features``` folder.
 
-3) Download the TESS dataset and unzip it into the ```TESS_Toronto_emotional_speech_set_data``` folder.
+2) **OPTIONAL**: Create two empty folders, ```Actor_25``` and ```Actor_26```, into the ```features``` folder.
+
+3) **OPTIONAL**: Download the TESS dataset and unzip it into the ```TESS_Toronto_emotional_speech_set_data``` folder.
 The format you need to have to make the following steps work is:
 
     ```
@@ -56,11 +58,11 @@ The format you need to have to make the following steps work is:
     --OAF_disgust
     --Other Folders..
     ```
-4) Run ```tess_pipeline.py```: this will copy the files in the ```Actor_25``` and ```Actor_26``` folders with a usable naming convention. For details, read the docstrings of ```tess_pipeline.py```.
+4) **OPTIONAL**: Run ```tess_pipeline.py```: this will copy the files in the ```Actor_25``` and ```Actor_26``` folders with a usable naming convention. For details, read the docstrings of ```tess_pipeline.py```.
 
-5) **ONLY IF YOU WANT TO CREATE NEW FEATURES**: run ```create_features.py```. Please note this is NOT necessary as in the ```features``` folder there are already the joblib files created with ```create_features.py```.
+6) **ONLY IF YOU WANT TO CREATE NEW FEATURES**: run ```create_features.py```. Please note this is NOT necessary as in the ```features``` folder there are already the joblib files created with ```create_features.py```.
 
-6) **ONLY IF YOU WANT TO CREATE A NEW MODEL**  run ```neural_network.py```. Please note this is NOT necessary as in the ```model``` folder there is already a pre_trained model to use.
+7) **ONLY IF YOU WANT TO CREATE A NEW MODEL**:  run ```neural_network.py```. Please note this is NOT necessary as in the ```model``` folder there is already a pre_trained model to use.
 
 # How to make a simple test
 
