@@ -41,7 +41,7 @@ Please note that in previous versions of this work I was working only with the R
 
 ![Link do classification report](https://github.com/marcogdepinto/Emotion-Classification-Ravdess/blob/master/media/ConfusionMatrix.png)
 
-# How to do it yourself
+# How to use this repository
 
 1)  ```git clone https://github.com/marcogdepinto/Emotion-Classification-Ravdess.git ``` OR, as an alternative, all the optional steps below.
 
