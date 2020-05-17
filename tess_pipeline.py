@@ -1,5 +1,5 @@
 """
-This file builts 2 additional actor folders (25 and 26) using features from the
+This file builds 2 additional actor folders (25 and 26) using features from the
 Toronto emotional speech set (TESS) dataset: https://tspace.library.utoronto.ca/handle/1807/24487
 
 These stimuli were modeled on the Northwestern University Auditory Test No. 6 (NU-6; Tillman & Carhart, 1966).
