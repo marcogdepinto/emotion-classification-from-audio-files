@@ -54,7 +54,7 @@ class TESSPipeline:
         We are filling folders Actor_25 if YAF and Actor_26 if OAF.
         The files will be copied and renamed and not simply moved (to avoid messing up
         things during the development of the pipeline.
-        Actor_24 and Actor_25 folders must be created before launching this script.
+        Actor_25 and Actor_26 folders must be created before launching this script.
         Example filename: 03-01-07-02-02-01-01.wav
         """
         counter = 0
