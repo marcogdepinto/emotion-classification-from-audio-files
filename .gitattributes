@@ -1,0 +1,5 @@
+ # Basic .gitattributes for a Python repo.
+*.py linguist-detectable=true
+
+# Jupyter notebook
+*.ipynb  linguist-detectable=false
