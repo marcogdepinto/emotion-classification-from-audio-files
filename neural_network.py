@@ -23,7 +23,7 @@ from config import MODEL_DIR_PATH
 class TrainModel:
 
     @staticmethod
-    def train_neural_network(X, y) -> str:
+    def train_neural_network(X, y) -> None:
         """
         This function trains the neural network.
         """
