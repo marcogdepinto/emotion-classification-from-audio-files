@@ -1,12 +1,12 @@
 # Audio Emotion Classification from Multiple Datasets
 
-# Executive Summary
+**Executive Summary**
 
-The scope of this project is to create a classifier able to predict the emotions of the speaker starting from an audio file. 
+This project presents a deep learning classifier able to predict the emotions of a human speaker encoded in an audio file. The classifier is trained using 2 different datasets, RAVDESS and TESS, and has an overall F1 score of 80% on 8 classes (neutral, calm, happy, sad, angry, fearful, disgust and surprised).
 
-**Dataset**
+**Feature set information**
 
-For this task, I have used 5252 samples from 
+For this task, the dataset is built using 5252 samples from:
 
 - the [Ryerson Audio-Visual Database of Emotional Speech and Song (RAVDESS) dataset](https://zenodo.org/record/1188976#.XsAXemgzaUk) 
 - the [Toronto emotional speech set (TESS) dataset](https://tspace.library.utoronto.ca/handle/1807/24487) 
@@ -17,31 +17,31 @@ The samples include:
 
 - 2800 files from **TESS**. A set of 200 target words were spoken in the carrier phrase "Say the word _____' by two actresses (aged 26 and 64 years) and recordings were made of the set portraying each of seven emotions (anger, disgust, fear, happiness, pleasant surprise, sadness, and neutral). There are 2800 stimuli in total. Two actresses were recruited from the Toronto area. Both actresses speak English as their first language, are university educated, and have musical training. Audiometric testing indicated that both actresses have thresholds within the normal range.
 
-The classes we are trying to predict are the following: (0 = neutral, 1 = calm, 2 = happy, 3 = sad, 4 = angry, 5 = fearful, 6 = disgust, 7 = surprised). This dataset is skewed as for the we do not have a calm class in TESS, hence there are less data for that particular class. This is evident when taking a look at the classification report.
+The classes the model wants to predict are the following: (0 = neutral, 1 = calm, 2 = happy, 3 = sad, 4 = angry, 5 = fearful, 6 = disgust, 7 = surprised). This dataset is skewed as there is not a calm class in TESS, hence there are less data for that particular class and this is evident when observing the classification report.
 
-Please note that in previous versions of this work I was working only with the RAVDESS dataset, TESS has been added recently. Also, I was extracting audio features from the videos of the RAVDESS dataset. This particular part of the pipeline has been removed because it was shuffling very similar files in the training and test sets, boosting accuracy of the model as a consequence (overfitting). Take a look at [this issue](https://github.com/marcogdepinto/Emotion-Classification-Ravdess/issues/11) to understand more about this. The old data exploration and codebase are both stored in the ```legacy_code``` folder.
+Please note that previous versions of this work was developed using only the RAVDESS dataset and TESS has been added recently. Also, the previous versions of this work used audio features extracted from the videos of the RAVDESS dataset. This particular part of the pipeline has been removed because it was shuffling very similar files in the training and test sets, boosting accuracy of the model as a consequence (overfitting). Take a look at [this issue](https://github.com/marcogdepinto/Emotion-Classification-Ravdess/issues/11) to understand more. The old data exploration codebase, including the above mentioned pipeline, is stored in the ```legacy_code``` folder.
 
-# Metrics
+**Metrics**
 
-**Model summary**
+*Model summary*
 
 ![Link to model](https://github.com/marcogdepinto/Emotion-Classification-Ravdess/blob/master/media/model.png) 
 
-**Loss and accuracy plots**
+*Loss and accuracy plots*
 
 ![Link to loss](https://github.com/marcogdepinto/Emotion-Classification-Ravdess/blob/master/media/loss.png) 
 
 ![Link to accuracy](https://github.com/marcogdepinto/Emotion-Classification-Ravdess/blob/master/media/accuracy.png)
 
-**Classification report**
+*Classification report*
 
 ![Link do classification report](https://github.com/marcogdepinto/Emotion-Classification-Ravdess/blob/master/media/ClassificationReport.png)
 
-**Confusion matrix**
+*Confusion matrix*
 
 ![Link do classification report](https://github.com/marcogdepinto/Emotion-Classification-Ravdess/blob/master/media/ConfusionMatrix.png)
 
-# How to use this repository
+**How to use the code inside this repository**
 
 1)  ```git clone https://github.com/marcogdepinto/Emotion-Classification-Ravdess.git ``` OR, as an alternative, all the optional steps below.
 
@@ -78,7 +78,7 @@ Feel free to try with other files or record your voice. I still have to try this
 
 *Important note*: the classes are encoded from 0 to 7 in the code. In the dataset, from 01 to 08. Be aware when you try. If the model predicts 0 and you are using a NEUTRAL file (01), this is correct and the expected behavior. Keras wants the predictions to start from 0 and not from 1, so the code is adjusted to cope with this requirement.
 
-# More info about the RAVDESS dataset
+**APPENDIX 1: More info about the RAVDESS dataset**
 
 **Download**
 
