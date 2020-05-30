@@ -1,6 +1,6 @@
 # Audio Emotion Classification from Multiple Datasets
 
-# The project
+# Executive Summary
 
 The scope of this project is to create a classifier able to predict the emotions of the speaker starting from an audio file. 
 
