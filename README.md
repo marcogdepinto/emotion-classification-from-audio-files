@@ -45,11 +45,11 @@ Please note that previous versions of this work was developed using only the RAV
 
 1)  ```git clone https://github.com/marcogdepinto/Emotion-Classification-Ravdess.git ``` OR, as an alternative, all the optional steps below.
 
-2) **OPTIONAL**: Download Audio_Song_Actors_01-24.zip and Audio_Speech_Actors_01-24.zip, unzip and merge the content of the folders (e.g. Actor_01 should include both Speech and Song) and then add it to the ```features``` folder.
+2) *OPTIONAL*: Download Audio_Song_Actors_01-24.zip and Audio_Speech_Actors_01-24.zip, unzip and merge the content of the folders (e.g. Actor_01 should include both Speech and Song) and then add it to the ```features``` folder.
 
-2) **OPTIONAL**: Create two empty folders, ```Actor_25``` and ```Actor_26```, into the ```features``` folder.
+2) *OPTIONAL*: Create two empty folders, ```Actor_25``` and ```Actor_26```, into the ```features``` folder.
 
-3) **OPTIONAL**: Download the TESS dataset and unzip it into the ```TESS_Toronto_emotional_speech_set_data``` folder.
+3) *OPTIONAL*: Download the TESS dataset and unzip it into the ```TESS_Toronto_emotional_speech_set_data``` folder.
 The format you need to have to make the following steps work is:
 
     ```
@@ -58,13 +58,13 @@ The format you need to have to make the following steps work is:
     --OAF_disgust
     --Other Folders..
     ```
-4) **OPTIONAL**: Run ```tess_pipeline.py```: this will copy the files in the ```Actor_25``` and ```Actor_26``` folders with a usable naming convention. For details, read the docstrings of ```tess_pipeline.py```.
+4) *OPTIONAL*: Run ```tess_pipeline.py```: this will copy the files in the ```Actor_25``` and ```Actor_26``` folders with a usable naming convention. For details, read the docstrings of ```tess_pipeline.py```.
 
-6) **ONLY IF YOU WANT TO CREATE NEW FEATURES**: run ```create_features.py```. Please note this is NOT necessary as in the ```features``` folder there are already the joblib files created with ```create_features.py```.
+6) *ONLY IF YOU WANT TO CREATE NEW FEATURES*: run ```create_features.py```. Please note this is NOT necessary as in the ```features``` folder there are already the joblib files created with ```create_features.py```.
 
-7) **ONLY IF YOU WANT TO CREATE A NEW MODEL**:  run ```neural_network.py```. Please note this is NOT necessary as in the ```model``` folder there is already a pre_trained model to use.
+7) *ONLY IF YOU WANT TO CREATE A NEW MODEL*:  run ```neural_network.py```. Please note this is NOT necessary as in the ```model``` folder there is already a pre_trained model to use.
 
-# How to make a simple test
+**How to test the model created in this work**
 
 Let's be clear. When we talk about emotions understanding, we are talking about a very difficult task. 
 
@@ -80,11 +80,11 @@ Feel free to try with other files or record your voice. I still have to try this
 
 **APPENDIX 1: More info about the RAVDESS dataset**
 
-**Download**
+*Download*
 
 The Ryerson Audio-Visual Database of Emotional Speech and Song (RAVDESS) can be downloaded free of charge at https://zenodo.org/record/1188976. 
 
-**Construction and Validation**
+*Construction and Validation*
 
 Construction and validation of the RAVDESS is described in our paper: Livingstone SR, Russo FA (2018) The Ryerson Audio-Visual Database of Emotional Speech and Song (RAVDESS): A dynamic, multimodal set of facial and vocal expressions in North American English. PLoS ONE 13(5): e0196391. https://doi.org/10.1371/journal.pone.0196391.
 
@@ -98,7 +98,7 @@ The dataset contains the complete set of 7356 RAVDESS files (total size: 24.8 GB
 
 “The Ryerson Audio-Visual Database of Emotional Speech and Song (RAVDESS)” by Livingstone & Russo is licensed under CC BY-NA-SC 4.0.
 
-**File naming convention**
+*File naming convention*
 
 Each of the 7356 RAVDESS files has a unique filename. The filename consists of a 7-part numerical identifier (e.g., 02-01-06-01-02-01-12.mp4). These identifiers define the stimulus characteristics:
 
@@ -112,7 +112,7 @@ Filename identifiers
 - Repetition (01 = 1st repetition, 02 = 2nd repetition).
 - Actor (01 to 24. Odd numbered actors are male, even numbered actors are female).
 
-**Filename example: 02-01-06-01-02-01-12.mp4**
+*Filename example: 02-01-06-01-02-01-12.mp4*
 
 - Video-only (02)
 - Speech (01)
@@ -123,7 +123,7 @@ Filename identifiers
 - 12th Actor (12)
 - Female, as the actor ID number is even.
 
-# More info about the TESS dataset
+**APPENDIX 2: More info about the TESS dataset**
 
 Pichora-Fuller, M. Kathleen; Dupuis, Kate, 2020, "Toronto emotional speech set (TESS)", https://doi.org/10.5683/SP2/E8H2MF, Scholars Portal Dataverse, V1
 
