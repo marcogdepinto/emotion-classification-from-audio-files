@@ -78,7 +78,7 @@ Feel free to try with other files or record your voice. I still have to try this
 
 *Important note*: the classes are encoded from 0 to 7 in the code. In the dataset, from 01 to 08. Be aware when you try. If the model predicts 0 and you are using a NEUTRAL file (01), this is correct and the expected behavior. Keras wants the predictions to start from 0 and not from 1, so the code is adjusted to cope with this requirement.
 
-**APPENDIX 1: More info about the RAVDESS dataset**
+**APPENDIX 1: The RAVDESS dataset**
 
 *Download*
 
@@ -123,7 +123,7 @@ Filename identifiers
 - 12th Actor (12)
 - Female, as the actor ID number is even.
 
-**APPENDIX 2: More info about the TESS dataset**
+**APPENDIX 2: The TESS dataset**
 
 Pichora-Fuller, M. Kathleen; Dupuis, Kate, 2020, "Toronto emotional speech set (TESS)", https://doi.org/10.5683/SP2/E8H2MF, Scholars Portal Dataverse, V1
 
