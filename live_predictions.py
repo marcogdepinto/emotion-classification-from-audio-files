@@ -29,7 +29,7 @@ class LivePredictions:
         """
         data, sampling_rate = librosa.load(self.file)
         mfccs = np.mean(librosa.feature.mfcc(y=data, sr=sampling_rate, n_mfcc=40).T, axis=0)
-        x = np.expand_dims(mfccs, axis=2)
+        x = np.expand_dims(mfccs, axis=1)
         x = np.expand_dims(x, axis=0)
         predictions = self.loaded_model.predict_classes(x)
         print( "Prediction is", " ", self.convert_class_to_emotion(predictions))
