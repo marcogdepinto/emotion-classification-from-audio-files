@@ -138,3 +138,18 @@ doi = {10.5683/SP2/E8H2MF},
 url = {https://doi.org/10.5683/SP2/E8H2MF}
 }
 ```
+
+**APPENDIX 3: Cite this work**
+
+The paper referred to below uses only the RAVDESS dataset. On the other hand, this github repository includes an updated version of the model that uses the TESS dataset and a different model architecture.
+
+```
+@INPROCEEDINGS{9122698,
+author={M. G. {de Pinto} and M. {Polignano} and P. {Lops} and G. {Semeraro}},
+booktitle={2020 IEEE Conference on Evolving and Adaptive Intelligent Systems (EAIS)},
+title={Emotions Understanding Model from Spoken Language using Deep Neural Networks and Mel-Frequency Cepstral Coefficients},
+year={2020},
+volume={},
+number={},
+pages={1-5},}
+```
