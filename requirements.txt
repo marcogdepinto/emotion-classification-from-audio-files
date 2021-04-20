@@ -80,7 +80,7 @@ prometheus-client==0.7.1
 prompt-toolkit==3.0.4
 protobuf==3.12.2
 psutil==5.7.0
-py==1.8.1
+py==1.10.0
 pycosat==0.6.3
 pycparser==2.20
 pydot==1.4.1
