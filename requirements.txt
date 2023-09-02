@@ -120,7 +120,7 @@ traitlets==4.3.3
 urllib3==1.25.8
 wcwidth==0.1.9
 webencodings==0.5.1
-Werkzeug==1.0.1
+Werkzeug==2.2.3
 whitenoise==4.1.4
 widgetsnbextension==3.5.1
 win-inet-pton==1.1.0
